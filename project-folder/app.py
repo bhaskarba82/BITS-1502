@@ -10,7 +10,7 @@ st.title("💼 Adult Income Classification Dashboard")
 @st.cache_resource
 def load_artifacts():
     base_path = "project-folder/model"
-"
+
     models = {
         "Logistic Regression": joblib.load(f"{base_path}/logistic_regression.pkl"),
         "Decision Tree": joblib.load(f"{base_path}/decision_tree.pkl"),
